@@ -2,7 +2,7 @@ import express from 'express';
 import bodyparser from 'body-parser';
 import ideasRoutes from './routes/ideas.js'
 
-const PORT = 5000
+const PORT = 5000 || process.env.PORT
 const app = express();
 
 app.use(bodyparser.urlencoded({ extended: true }));
